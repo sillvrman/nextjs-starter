@@ -28,7 +28,7 @@ export interface OptionsType {
 
 const Layout: React.FC<LayoutProps> = ({
     children,
-    title = 'Dadbanan',
+    title = 'alisan',
     searchBar = true,
     footer = true,
     selected,
@@ -42,7 +42,7 @@ const Layout: React.FC<LayoutProps> = ({
             <Head>
                 <title>{title}</title>
 
-                <meta property="og:title" content="Dadbanan" />
+                <meta property="og:title" content="alisan" />
                 <meta property="og:type" content="jewellery.gallery" />
                 {/* <meta property="og:url" content="https://kolahduzan.com" />
                 <meta property="og:image" content="https://kolahduzan.com/pic/logo.png" /> */}
@@ -52,7 +52,7 @@ const Layout: React.FC<LayoutProps> = ({
                 {/* <link rel="shortcut icon" href="pic/logo-kolahduzan.png?id=04" /> */}
                 {/* <base href="https://kolahduzan.com" /> */}
 
-                <meta name="description" content="kolahduzan jewellery designer gallery Dadbanan" />
+                <meta name="description" content="kolahduzan jewellery designer gallery alisan" />
                 <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
                 <link rel="icon" href="/kookbaz-72.png" />
                 <link rel="icon" type="image/png" href="/icons/favicon.png" />
