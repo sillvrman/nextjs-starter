@@ -1,0 +1,7 @@
+.fit {
+    min-height: calc(100vh - 88px);
+}
+.paymentBtnColor {
+    background-color: rgba(231, 211, 140, 0.17);
+    color: rgba(207, 173, 108, 1);
+}

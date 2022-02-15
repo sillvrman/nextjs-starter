@@ -1,0 +1,30 @@
+.bg {
+    background-image: linear-gradient(to top, rgb(232, 213, 142), rgb(192, 154, 82));
+    @apply pb-3;
+}
+.logo {
+    height: 90px;
+    width: auto;
+    margin-top: 25px;
+}
+.navbar_menu {
+    padding: 0 0 3px 0;
+}
+.navbar_menu > a {
+    float: right !important;
+    margin: 10px 20px 0 0;
+    color: #fff;
+    cursor: pointer;
+}
+.socialNetworkIcon {
+    width: 17.15px;
+    height: 31.2px;
+}
+.topNavbarField {
+    padding: 17px 10px 17px 10px;
+}
+
+.in {
+    transition: all 0.5s;
+    @apply w-full text-white p-3 h-auto animate-fade-in-down z-50 text-sm absolute;
+}

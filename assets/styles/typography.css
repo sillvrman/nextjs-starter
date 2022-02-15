@@ -1,0 +1,18 @@
+@font-face {
+    font-family: IBMPlexSansBold;
+    font-style: normal;
+    font-weight: bold;
+    src: url('../fonts/IranSans/IRANSansWeb\(FaNum\)_Bold.ttf');
+}
+@font-face {
+    font-family: IBMPlexSans;
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/IranSans/IRANSansWeb\(FaNum\).ttf');
+}
+@font-face {
+    font-family: IBMPlexSansLight;
+    font-style: normal;
+    font-weight: lighter;
+    src: url('../fonts/IranSans/IRANSansWeb\(FaNum\)_Light.ttf');
+}

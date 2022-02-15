@@ -1,0 +1,61 @@
+.input {
+    padding: 0.5rem;
+    @apply rounded bg-white p-2 text-gray-700 ring-0 ring-transparent ring-white ring-offset-0 transition-all duration-300 focus-visible:outline-0;
+}
+
+.label {
+    top: 15px;
+    margin-right: 0.5rem;
+    max-width: fit-content !important;
+    left: 0;
+    padding: 0 10px;
+    height: 5px;
+    color: #7e7e7e;
+    right: 0;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    font-size: 15px;
+    cursor: text;
+    transition: 0.2s ease-in-out;
+    box-sizing: border-box;
+    border-radius: 10px 10px 0 0;
+    background: #fff;
+}
+
+.input,
+.label {
+    width: 100%;
+    font-size: 12px;
+}
+.input.error {
+    border: 1px solid #f8384e;
+}
+.label.error {
+    color: #f8384e !important;
+    background: #fff;
+}
+
+.input:focus + .label {
+    font-size: 12px;
+    right: 16px;
+    margin-right: 0.5rem;
+    top: -3px;
+    padding: 0px 5px !important;
+    max-width: fit-content;
+    pointer-events: none;
+    @apply text-blue;
+}
+
+.label.fill {
+    color: #2168b2;
+    padding: 5px 3px;
+    font-size: 12px;
+    right: 16px;
+    padding: 0px 5px !important;
+    margin-right: 0.5rem;
+    top: -3px;
+    max-width: fit-content;
+    pointer-events: none;
+    background: #fff;
+}

@@ -1,0 +1,40 @@
+@keyframes placeHolderShimmer {
+    0% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        background-position: -100vw 0;
+    }
+    to {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        background-position: 100vw 0;
+    }
+}
+
+.cardSkeleton {
+    margin: 5px;
+    position: relative;
+    float: left;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    background: transparent;
+    z-index: 0;
+    opacity: 1;
+}
+
+.animatedBackground {
+    will-change: transform;
+    animation: placeHolderShimmer 4s linear infinite forwards;
+    -webkit-backface-visibility: hidden;
+    background: #fff;
+    background: linear-gradient(90deg, #ededed 0%, #fff 18%, #ededed 35%);
+    background-size: 100vw 104px;
+    height: 100%;
+    position: relative;
+}
+
+.skelMaskContainer {
+    position: relative;
+}

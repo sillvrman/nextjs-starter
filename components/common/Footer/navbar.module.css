@@ -1,0 +1,15 @@
+.footer_container {
+    background-image: linear-gradient(to bottom, rgb(232, 213, 142), rgb(192, 154, 82));
+    @apply flex justify-center w-full text-white text-sm;
+}
+.footerBox {
+    text-align: center;
+    margin-top: 25px;
+    padding: 10px 0;
+    border-top: 1px solid #fff;
+    width: 50%;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #fff;
+}

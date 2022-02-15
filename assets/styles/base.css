@@ -1,0 +1,122 @@
+@import './typography.css';
+
+* {
+    direction: rtl !important;
+    font-family: IBMPlexSans !important;
+}
+canvas {
+    direction: rtl !important;
+    font-family: IBMPlexSans;
+}
+
+#__next {
+    height: 100%;
+}
+
+/* [data-theme='dark'] {
+} */
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+    touch-action: manipulation;
+    font-feature-settings: 'case' 1, 'rlig' 1, 'calt' 0;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    height: 100%;
+    position: relative;
+    min-height: 100%;
+    margin: 0;
+}
+
+a {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.scrollbar-none::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollbar-none {
+    scrollbar-color: transparent transparent;
+    scrollbar-width: none;
+}
+
+/* INPUT */
+[type='text']:focus,
+[type='email']:focus,
+[type='url']:focus,
+[type='password']:focus,
+[type='number']:focus,
+[type='date']:focus,
+[type='datetime-local']:focus,
+[type='month']:focus,
+[type='search']:focus,
+[type='tel']:focus,
+[type='time']:focus,
+[type='week']:focus,
+[multiple]:focus,
+textarea:focus,
+select:focus {
+    --tw-ring-inset: var(--tw-empty, /*!*/ /*!*/);
+    --tw-ring-offset-width: 0px;
+    --tw-ring-color: none;
+    --tw-ring-offset-shadow: none;
+    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width))
+        var(--tw-ring-color);
+}
+/* Change the white to any color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+/* TOAST */
+.Toastify__toast-container {
+    @apply p-5 md:p-0 !important;
+}
+.Toastify__toast {
+    direction: rtl !important;
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    @apply h-full w-full rounded-lg p-0 shadow-lg !important;
+}
+
+.Toastify__toast--error::before {
+    content: ' ';
+    @apply block h-16 w-5 bg-red-500;
+}
+.Toastify__toast--success::before {
+    content: ' ';
+    @apply block h-16 w-5 bg-green-700;
+}
+.Toastify__toast--info::before {
+    content: ' ';
+    @apply block h-16 w-5 bg-blue;
+}
+.Toastify__toast--warning::before {
+    content: ' ';
+    @apply block h-16 w-5 bg-yellow-500;
+}
+.Toastify__toast--error {
+    @apply text-red-500;
+}
+.Toastify__toast--warning {
+    @apply text-yellow-500;
+}
+.Toastify__toast--success {
+    @apply text-green-700;
+}
+.Toastify__toast--info {
+    @apply text-blue;
+}
